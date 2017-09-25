@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/style.css" >
+
+    <title>User dashboard</title>
+  </head>
+  <body style="background-color:white;">
+    <header>
+            <div class ="container" style="margin-bottom:30px;">
+              <div class ="row">
+                  <div class=col-12>
+                    <nav class="navbar navbar-inverse navbar-light text" style="background-color : #944654;" >
+                      <a class="navbar-brand " href="#">
+                      <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top " alt="">
+                      Yummy recipes
+                      </a>
+                      <a  class="nav-item nav-link text" href="#"> Recipes</a>
+                      <a  class="nav-item nav-link text" href="#"> Log out</a>
+                    </nav> 
+                  </div>      
+              </div>  
+            </div>  
+          </header>       
+            <div class ="container">
+                <div class ="row">
+                    <div class=col-12>
+                      <div class="jumbotron" style="background-color:#A6F4DC;">
+                            <div class="container items" >
+                                    <div class="form-group float-right">
+                                        <!-- Trigger the modal with add item button -->
+                                        <button class=" btn btn-info" type="submit" data-toggle="modal" data-target="#myModal">Create New Recipe</button>
+                                    </div><!-- container-->
+                                
+                                
+                                    <!-- Modal -->
+                                
+                                    <div id="myModal" class="modal fade" role="dialog">
+                                        <div class="modal-dialog">
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">New Recipe</h4>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                
+                                                <!--modal body-->
+                                                <div class="modal-body">
+                                                    <form class="form-horizontal">
+                                                        <div class="row">
+                                                            <div class="col">
+                                
+                                                                <!--title-->
+                                                                <div class="form-group">
+                                                                    <label class="control-label col-sm-2" for="item">Title:</label>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control" id="item" >
+                                                                    </div>
+                                                                </div>
+                                
+                                                                <!--description-->
+                                                                <div class="form-group">
+                                                                    <label class="control-label col-sm-2" for="description">Description:</label>
+                                                                    <div class="col">
+                                                                        <textarea type="text" class="form-control" id="description"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-success" data-dismiss="modal">Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                
+                                 <!-- Table of lists that have been created-->
+                                
+                                    <table class="table table-hover table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th>Title</th>
+                                            <th>Description</th>
+                                            <th colspan="2">Action</th>
+                                        </tr>
+                                        </thead>
+                                
+                                        <tbody>
+                                        <tr>
+                                            <td><a href="'#'">LEMONY COCONUT FROZEN YOGURT </a></td>
+                                            <td><p>Line a strainer or colander with four layers of cheesecloth or one coffee filter; place over a bowl. </p>
+                                                <p>Place yogurt in prepared strainer; refrigerate, covered, 3 hours. Remove yogurt from cheesecloth and place in a large bowl; discard drained liquid.</p></td>
+                                            <td><a href="#">Edit</a></td>
+                                            <td><a href="#">Delete</a></td>
+                                        </tr>
+                                                </tbody>
+                                    </table>
+                                </div>
+                          
+
+            
+                        </div>
+     
+                </div>
+              </div>
+            </div>
+   
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>
