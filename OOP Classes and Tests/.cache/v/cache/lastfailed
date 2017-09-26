@@ -1,1 +1,3 @@
-{}
+{
+  "test_user.py::userTestCase::test_edit_list": true
+}
