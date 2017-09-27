@@ -183,6 +183,32 @@ def items(recipe_id):
 
     return render_template('items.html', user=user, shop_recipe=shop_recipe)
 
+@app.route('/delete/recipe/item/<recipe_id>/<item_id>', methods=['GET', 'POST'])
+def delete_item(recipe_id, item_id):
+    """"
+    This route enables the user to delete any of the items
+    :param recipe_id
+    :param item_id
+    """
+    error = None
+    user = yummy_recipes.get_user(session['email'])
+    if not user:
+        return redirect(url_for('login'))
+
+    shop_recipe = user.get_recipe(recipe_id)
+    item = shop_recipe.get_item(item_id)
+    if not shop_recipe and not item:
+        flash('Item does not exist')
+        return redirect(url_for('items', recipe_id=recipe_id))
+
+    if request.method == 'POST':
+        if shop_recipe.del_item(item_id):
+            flash('Item has been deleted')
+            return redirect(url_for('items', recipe_id=shop_recipe.recipe_id))
+
+        error = 'Item was not deleted'
+    return render_template('delete_items.html', error=error, user=user, shop_recipe=shop_recipe, item=item)
+
 @app.route('/logout')
 def logout():
     """"
