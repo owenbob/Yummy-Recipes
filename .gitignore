@@ -103,4 +103,4 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-.Virtual_Environment
+Virtual_Environment/
