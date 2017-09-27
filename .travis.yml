@@ -2,16 +2,17 @@ cache:
 - pip
 
 python:
-
 - "3.6"
 
 install:
-- pip install .
-- pip install -r requirements.txt
-
-
+- pip install coverage
+- pip install coveralls
+- pip install pytest
 
 
 script:
 - pytest
 
+after_success:
+- coverage report
+- coveralls
