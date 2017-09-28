@@ -1,0 +1,9 @@
+{
+  "test_recipeItems.py::testRecipesTestCase::test_delete_item_from_recipe_item_list": true,
+  "test_recipes.py::testRecipesTestCase": true,
+  "test_recipes.py::testRecipesTestCase::test_create_recipe": true,
+  "test_recipes.py::testRecipesTestCase::test_create_recipe_items": true,
+  "test_recipes.py::testRecipesTestCase::test_del_recipe": true,
+  "test_recipes.py::testRecipesTestCase::test_edit_recipe": true,
+  "test_user.py::userTestCase::test_edit_list": true
+}

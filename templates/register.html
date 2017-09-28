@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{url_for("static",filename="css/bootstrap.min.css")}}" >
+    <link rel="stylesheet" href="{{url_for("static",filename="css/style.css")}}" >
+
+    <title>Register Page</title>
+  </head>
+  <body style="background-color:white;">
+    <header>
+            <div class ="container" style="margin-bottom:30px;">
+              <div class ="row">
+                  <div class=col-12>
+                    <nav class="navbar  navbar-inverse navbar-light text" style="background-color : #F7B2A5;" >
+                      <a class="navbar-brand " href="#">
+                      <img src="static/images/logo.png" width="30" height="30" class="d-inline-block align-top " alt="">
+                      Yummy Recipes
+                      </a>
+                      <a  class="nav-item nav-link text" href="login"> Log In</a>
+                    </nav> 
+                  </div>      
+              </div>  
+            </div>  
+          </header>       
+            <div class ="container">
+                <div class ="row">
+                    <div class=col-12>
+                      <div class="jumbotron" style="background-color:#A6F4DC;">
+                          <h1 class="display-5 align">Welcome To Yummy Recipes</h1>
+                          <hr class="my-4">
+                          <p class="align"> Please Register below to enjoy the experience!</p>
+                          <hr class="my-4">
+
+                          <div class="container center">
+                          <div class=col-12 >
+                            <!--Flash div-->
+                            <div class =container -fluid style >
+                                {% with messages = get_flashed_messages() %}
+                                {% if messages %}
+                                  
+                                  {% for message in messages %}
+  
+                                  <div class="alert alert-warning alert dismissible" role="alert">
+                                    {{ message }}
+                                  </div>
+  
+                                  {% endfor %}
+                                {% endif %}
+                              {% endwith %}
+                            </div>
+                              <!-- End Flash div-->
+                          
+                            <form action = "{{ url_for("register") }}" method="POST">
+                              
+                              <p>Fill in the form below to create your account</p>
+
+                              <div class="form-group row"style="align:center;">
+                                  <div class="col-sm-10">
+                                  <input class="form-control" type="text" name="name" placeholder="Your name"/>
+                                  </div>
+                                  </div>
+
+                                  <div class="form-group row">
+                                  <div class="col-sm-10">
+                                  <input class="form-control" type="email" name="email" placeholder="Email"/>
+                                  </div>
+                                  </div>
+
+                                  <div class="form-group row">
+                                  <div class="col-sm-10">
+                                  <input class="form-control" type="password" name="password" placeholder="Password"/>
+                                  </div>
+                                  </div>
+
+                                  <div class="form-group row">
+                                  <div class="col-sm-10">
+                                  <input  class="btn btn-info" id="btn" type="submit" value="Sign Up"/>
+                                  </div>
+                                  </div>
+                                  <p>Terms and Conditions apply.</p>
+                            </div>
+                          </form>
+                            </div>
+                          </div>
+                        </div>
+     
+                </div>
+              </div>
+            </div>
+   
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>
