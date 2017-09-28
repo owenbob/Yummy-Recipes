@@ -53,8 +53,3 @@ class Recipes:
             del self.new_recipe_items[item_id]
             return True
         return False
-"""
-    def check_valid_items(self, title):
-        if re.match("^[a-zA-Z0-9\s]*$", title):
-            return True
-"""
