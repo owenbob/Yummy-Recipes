@@ -1,8 +1,8 @@
 from flask import *
-from Flask_Application_implementation.models.application import Application
-from Flask_Application_implementation.models.user import User
-from Flask_Application_implementation.models.recipes import Recipes
-from Flask_Application_implementation.models.recipe_Items import RecipeItems
+from models.application import Application
+from models.user import User
+from models.recipes import Recipes
+from models.recipe_Items import RecipeItems
 
 
 
