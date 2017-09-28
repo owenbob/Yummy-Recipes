@@ -1,8 +1,8 @@
 from flask import *
-from models.application import Application
-from models.user import User
-from models.recipes import Recipes
-from models.recipe_Items import RecipeItems
+from Flask_Application_implementation.models.application import Application
+from Flask_Application_implementation.models.user import User
+from Flask_Application_implementation.models.recipes import Recipes
+from Flask_Application_implementation.models.recipe_Items import RecipeItems
 
 
 
@@ -221,5 +221,6 @@ def logout():
 
 
 
-if __name__ == "__main__":
+# run the app
+if __name__ == '__main__':
     app.run(debug=True)
