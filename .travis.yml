@@ -10,10 +10,10 @@ python:
 # command to install dependencies
 install: 
  - "pip install -r requirements.txt"
- -
+  - "pip install coverage"
 # command to run tests
 script: pytest
 
 after_success:
- sh -c 'cd ./flask_app/ && coveralls'
+ - coveralls'
 
