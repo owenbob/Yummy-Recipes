@@ -1,4 +1,5 @@
 ![Travis - Build](https://travis-ci.org/owenbob/Yummy-Recipes.svg?branch=development)
+[![Coverage Status](https://coveralls.io/repos/github/owenbob/Yummy-Recipes/badge.svg)](https://coveralls.io/github/owenbob/Yummy-Recipes)
 
 
 # Yummy-Recipes
