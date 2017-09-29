@@ -1,6 +1,6 @@
 ![Travis - Build](https://travis-ci.org/owenbob/Yummy-Recipes.svg?branch=development)
 [![Coverage Status](https://coveralls.io/repos/github/owenbob/Yummy-Recipes/badge.svg)](https://coveralls.io/github/owenbob/Yummy-Recipes)
-[![Code Climate](https://codeclimate.com/github/codeclimate/codeclimate/badges/gpa.svg)](https://codeclimate.com/github/codeclimate/codeclimate)
+[![Code Climate](https://codeclimate.com/github/owenbob/Yummy-Recipes/badges/gpa.svg)](https://codeclimate.com/github/owenbob/Yummy-Recipes)
 
 
 # Yummy-Recipes
