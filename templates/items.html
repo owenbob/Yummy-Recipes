@@ -76,7 +76,7 @@
 
                             <!-- modal body-->
                         <div class="modal-body">
-                            <form class="form-horizontal" action="{{ url_for('add_item', recipe_id=shop_recipe.recipe_id) }}"method="post">
+                            <form class="form-horizontal" action="{{ url_for("add_item", recipe_id=recipe_step.recipe_id) }}"method="post">
                                 <div class="row">
                                     <div class="col">
                                         <div class="form-group">
@@ -86,26 +86,9 @@
                                             </div>
                                         </div>
                         
-                        <div class="form-group">
-                                <label class="control-label col-sm-2" for="price">Price</label>
-                                <div class="col">
-                                    <input type="text" class="form-control" id="price" name="price" required>
-                                </div>
-                            </div>
+                        
 
-
-                            <div class="form-group">
-                                    <label class="control-label col-sm-6" for="status">Select status:</label>
-                                    <div class="col">
-                                        <select class="form-control" id="status" name="status" required>
-                                            <option></option>
-                                            <option>Not Done</option>
-                                            <option>Done</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            
 
                         <div class="modal-footer">
                             <input type="submit" class="btn btn-success" value="Save">
@@ -117,7 +100,7 @@
                     </div>
 
                     <!-- Table displaying recipe items-->
-                            {% if shop_recipe.recipe_items %}
+                            {% if recipe_step.recipe_items %}
                             <table class="table table-hover">
 
                                 <thead>
@@ -132,8 +115,8 @@
                                 </thead>
 
                                 <tbody>
-                                {% for key, item in shop_recipe.recipe_items.items() %}
-                                    {% if item.status == 'Done' %}
+                                {% for key, item in recipe_step.recipe_items.items() %}
+                                    {% if item.status == "Done" %}
                                         <tr>
 
                                             <td>
@@ -147,10 +130,10 @@
                                             </td>
                                             <td>{{ item.status }}</td>
                                             <td class="text-right"><a
-                                                    href="{{ url_for('edit_item', recipe_id = shop_recipe.recipe_id, item_id = item.item_id) }}"
+                                                    href="{{ url_for("edit_item", recipe_id = recipe_step.recipe_id, item_id = item.item_id) }}"
                                                     class=" btn btn-link">EDIT</a></td>
                                             <td class="text-right"><a
-                                                    href="{{ url_for('delete_item',recipe_id = shop_recipe.recipe_id, item_id = item.item_id) }}"
+                                                    href="{{ url_for("delete_item",recipe_id = recipe_step.recipe_id, item_id = item.item_id) }}"
                                                     class="btn btn-link">DELETE</a>
                                             </td>
 
@@ -160,10 +143,10 @@
                                             <td>{{ item.price }}</td>
                                             <td>{{ item.status }}</td>
                                             <td class="text-right"><a
-                                                    href="{{ url_for('edit_item', recipe_id = shop_recipe.recipe_id, item_id = item.item_id) }}"
+                                                    href="{{ url_for("edit_item", recipe_id = recipe_step.recipe_id, item_id = item.item_id) }}"
                                                     class=" btn btn-link">EDIT</a></td>
                                             <td class="text-right"><a
-                                                    href="{{ url_for('delete_item',recipe_id = shop_recipe.recipe_id, item_id = item.item_id) }}"
+                                                    href="{{ url_for("delete_item",recipe_id = recipe_step.recipe_id, item_id = item.item_id) }}"
                                                     class="btn btn-link">DELETE</a>
                                             </td>
 
@@ -178,7 +161,7 @@
                             <!-- Page contents -->
 
                             <h1 class="text-center d-flex align-item-center justify-content-center">There are no items
-                                in {{ shop_recipe.title }} </h1>
+                                in {{ recipe_step.title }} </h1>
 
                         {% endif %}
                     </div><!-- container-->

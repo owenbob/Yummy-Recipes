@@ -76,7 +76,7 @@
 
                     <!--modal body-->
                     <div class="modal-body">
-                        <form class="form-horizontal" action="{{ url_for('add_recipe') }}" method="post">
+                        <form class="form-horizontal" action="{{ url_for("add_recipe") }}" method="post">
                             <div class="row">
                                 <div class="col">
 
@@ -123,14 +123,14 @@
 
                 <!--table body-->
                 <tbody>
-                {% for key, shop_recipe in recipes.items() %}
+                {% for key, recipe_step in recipes.items() %}
                     <tr>
-                        <td>
-                            <a href="{{ url_for('items', recipe_id = shop_recipe.recipe_id) }}">{{ shop_recipe.title }}</a>
+                        <td >
+                            {{ recipe_step.title }}
                         </td>
-                        <td>{{ shop_recipe.description }}</td>
-                        <td class="text-right"><a href="{{ url_for('edit_recipe',recipe_id = shop_recipe.recipe_id) }}">EDIT</a></td>
-                        <td class="text-right"><a href="{{ url_for('delete_recipe',recipe_id = shop_recipe.recipe_id) }}">DELETE</a>
+                        <td style="white-space:pre-wrap ; word-wrap:break-word;">{{ recipe_step.description }}</td>
+                        <td class="text-right"><a href="{{ url_for("edit_recipe",recipe_id = recipe_step.recipe_id) }}">EDIT</a></td>
+                        <td class="text-right"><a href="{{ url_for("delete_recipe",recipe_id = recipe_step.recipe_id) }}">DELETE</a>
                         </td>
                     </tr>
                 {% endfor %}

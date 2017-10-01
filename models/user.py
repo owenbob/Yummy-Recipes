@@ -3,12 +3,9 @@ import re
 
 class User:
     def __init__(self, username, email, password):
-        """"
-        method to initialize user attributes
-        :param username
-        :param email
-        :param password
-        """
+        
+    # method to initialize user attributes
+        
         self.username = username
         self.email = email
         self.password = password
@@ -66,11 +63,3 @@ class User:
             del self.new_recipes[recipe_id]
             return True
         return None
-"""
-    def check_valid_recipe(self, title):
-        
-        method to check that recipe title does not contain any special characters
-        
-        if re.match("^[a-zA-Z0-9\s]*$", title):
-            return True
-"""

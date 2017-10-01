@@ -37,4 +37,4 @@ class Application:
     def random_id(self):
       #method to generate random id
         
-        return ''.join(random.SystemRandom().choice(string.ascii_uppercase + string.digits) for _ in range(10))
+        return "".join(random.SystemRandom().choice(string.ascii_uppercase + string.digits) for _ in range(10))
