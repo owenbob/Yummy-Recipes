@@ -4,8 +4,8 @@
 [![Code Climate](https://codeclimate.com/github/owenbob/Yummy-Recipes/badges/gpa.svg)](https://codeclimate.com/github/owenbob/Yummy-Recipes)
 
 
-# Yummy-Recipes
-# Yummy recipes app is an application that allows users  to create, save and share recipes.
+## Yummy-Recipes
+## Yummy recipes app is an application that allows users  to create, save and share recipes.
 
 ## Required Features
   * Users create accounts
