@@ -19,3 +19,31 @@
   * Users can upvote public recipes they like
 
 
+  ## Installation
+First clone this repository
+```
+$ git clone https://github.com/owenbob/Yummy-Recipes
+$ cd Yummy-Recipes-App.git
+```
+Create virtual environment and install it
+```
+$ virtualenv env
+$ source/env/bin/activate
+```
+Then install all the necessary dependencies
+```
+pip install -r requirements.txt
+```
+
+## Run the application
+At the terminal or console type
+```
+python app.py
+```
+To run tests  cd into Tests directory run this command at the console/terminal
+```
+pytest name_of_test eg pytest test_user.py
+```
+
+
+
