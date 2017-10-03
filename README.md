@@ -23,7 +23,7 @@
 First clone this repository
 ```
 $ git clone https://github.com/owenbob/Yummy-Recipes
-$ cd Yummy-Recipes-App.git
+$ cd Yummy-Recipes
 ```
 Create virtual environment and install it
 ```
