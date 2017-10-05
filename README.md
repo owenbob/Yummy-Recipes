@@ -13,10 +13,7 @@
   * Users create, view, update and delete recipe categories
   * SUsers can create, view, update or delete recipes in existing categories
 
- ## Extra Credit Features
-  * Users can browse public recipes on the platform
-  * Users can review public recipes
-  * Users can upvote public recipes they like
+
 
 
   ## Installation

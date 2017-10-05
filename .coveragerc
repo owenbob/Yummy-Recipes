@@ -1,0 +1,19 @@
+[run]
+omit = 
+    *_bootlocale.py                 
+    *encodings\cp1252.py 
+    *pycache*
+    /OOP_Classes\user.py
+
+
+[report]
+omit = 
+    *_bootlocale.py                 
+    *encodings\cp1252.py 
+
+
+
+[post]
+omit = 
+    *_bootlocale.py                 
+    *encodings\cp1252.py 
