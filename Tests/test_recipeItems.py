@@ -1,6 +1,6 @@
 import unittest
 
-from OOP_Classes.recipeItem import recipeItems
+from Classes.recipeItem import recipeItems
 
 """
 Test class for Receipes and RecipeItem Classes

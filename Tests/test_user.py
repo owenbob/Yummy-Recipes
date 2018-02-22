@@ -2,8 +2,8 @@ import unittest
 
 
 
-from OOP_Classes.user import User
-from OOP_Classes.recipes import Recipes
+from Classes.user import User
+from Classes.recipes import Recipes
 
 """
 Class below to test if user can create ,view ,update and delete lists
