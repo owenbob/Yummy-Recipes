@@ -1,5 +1,4 @@
-![Travis - Build](https://travis-ci.org/owenbob/Yummy-Recipes.svg?branch=development)
-[![Code Climate](https://codeclimate.com/github/owenbob/Yummy-Recipes/badges/gpa.svg)](https://codeclimate.com/github/owenbob/Yummy-Recipes)
+
 [![CircleCI](https://circleci.com/gh/owenbob/Yummy-Recipes.svg?style=svg)](https://circleci.com/gh/owenbob/Yummy-Recipes)
 
 
