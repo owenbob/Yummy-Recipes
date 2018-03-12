@@ -55,7 +55,7 @@ jobs:
           destination: test-reports
 
     deployment:
-      prod:
+      production:
         branch: master
         heroku:
           appname: circle-yummy
