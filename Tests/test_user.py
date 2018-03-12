@@ -21,7 +21,7 @@ class userTestCase(unittest.TestCase):
 
     #Test if the user has Email Variable
     def test_emailaddress(self):
-        self.assertEqual(self.user.email, "spiderman1@gmail.com", msg = "Email is Invalid")
+        self.assertEqual(self.user.email, "spiderman@gmail.com", msg = "Email is Invalid")
 
     #Test if the user has Password Variable
     def test_password(self):
